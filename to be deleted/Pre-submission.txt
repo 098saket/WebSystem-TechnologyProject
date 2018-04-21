@@ -1,0 +1,55 @@
+Pre-Submission Report
+
+
+This is a pre submission report of Internet Programming Project "RIO 2016".A website that contains information and facts about the Olympic 2016 held in Rio de janeiro,Brazil and many more other contents.
+
+It includes all the information about Module Wise Description, Roll and Responsibility of each group member
+
+(Module Wise Description)
+In this project so far we have planned about Seven(7) web pages and also a home page
+
+*Home Page 
+
+
+1>Sports event : This module gives information about all the sports event conducted in rio 2016
+2>Schedule of all sports event : This module gives all the schedule of all the events and their respective rounds
+3>Ticket Booking : This module provides user to login their ID and select the ticket and payment option 
+4>Participating Countries : This module provide all the information about countries participating in the events
+5>Medal Tally : This module displays all the medals and team standings throughout the events
+6>Olympics Facts : This module provides some interesting facts about olympics fact till date
+7>Gallery : This module includes videos of some world records and beutifull moments of true sportsmanship and dedication
+
+
+
+(Role And Responsibility of each group members)
+
+We are working as a group on the project number 6 ("RIO 2016") ,there are three members:
+
+1>Bivek Karki=>roll no. 16
+              (11609886)
+2>Gaurav Kumar=>roll no. 17
+              (        )
+3>Pawan Kumar=>roll no. 18
+              (11606676)
+We have divided different tasks for the accomplishment of the project and all are giving their best to complete given tasks and will do the same further
+
+Bivek will work on: Research for the content of the project
+	            Pre-Submission report
+                    Medal tally module
+                    Sports Event module
+                    Home Page
+                    
+Gaurav will work on:Venue module
+                    Olympic Facts module
+                    Ticket booking module(Log in page)
+                    Ticket booking module(Choose your ticket)    
+                    
+    
+Pawan will work on:Gallery module
+                   Schedule of all sports events module
+                   Participating countries module
+                   Ticket booking module(Payment page)
+ 
+A brief description of each module is included in the module wise description.We all three are working on the coding(source code) for the project and also be working on Final Report of the project.
+
+So far we are about to complete these tasks,and further we will try more to improve and enhance our project than the described in the module description.

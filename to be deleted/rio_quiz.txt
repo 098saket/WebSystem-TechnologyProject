@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>
+RIO QUIZ
+</title>
+</head>
+<body>
+<p id="ans">
+</p>
+<a  id="name">
+</a>
+<script>
+var c=confirm("are you ready?");
+if(c==true)
+{
+document.getElementById("name").href="rioquiz.html";
+}
+</script>
+</body>
+</html>

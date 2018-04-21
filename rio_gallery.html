@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+GALLERY
+</title>
+<script>
+var n;
+n=0;
+function nex()
+{ 
+if(n<6)
+n++;
+document.getElementById("link").src= "video"+n+".html";
+}
+function prev()
+{ 
+if(n>1)
+{n--;}
+document.getElementById("link").src= "video"+n+".html";
+}
+</script>
+</head>
+<body>
+<p align="right"><img src="images/home.png" height=45px width=35px><a href="rio 2016.html">HOME</a> </p>
+<br>
+<br>
+<center>  <input type="button" value="PREVIOUS<<" onclick="prev()">&nbsp; &nbsp;<input type="button" value="NEXT>>" onclick="nex()"></center>
+<right><iframe src="gallery.html" id="link" frameborder="0" width="1600px" height="600px"></right>
+</body>
+</html>

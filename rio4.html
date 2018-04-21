@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<title>Ticketing Booking</title>
+<style>
+legend
+{
+color:red;
+}
+fieldset
+{
+border-color:dotted blue;
+}
+label
+{ color:black;
+}
+
+.header{
+padding:30px;
+background-color:orange;
+color-purple;}
+.footer{
+padding:30px;
+background-color:pink;
+color-red;
+}
+.getter{
+padding:50px;
+background-color:gold;
+color:blue;
+}
+</style>
+<script>
+function payment()
+{ document.location.href="payment.html"; 
+}
+function f0()
+{
+document.getElementById("t1").style.backgroundColor="white";
+document.getElementById("t2").style.backgroundColor="white";
+document.getElementById("t3").style.backgroundColor="white";
+document.getElementById("t6").style.backgroundColor="white";
+document.getElementById("t7").style.backgroundColor="white";
+}
+function f1()
+{
+document.getElementById("t1").style.backgroundColor="red";
+}
+function f2()
+{
+document.getElementById("t2").style.backgroundColor="red";
+}
+function f3()
+{
+document.getElementById("t3").style.backgroundColor="red";
+}
+function f4()
+{
+document.getElementById("t6").style.backgroundColor="red";
+}
+function f5()
+{
+document.getElementById("t7").style.backgroundColor="red";
+}
+function calculate()
+{
+var age=document.getElementById("t3").value;
+var s = document.getElementById("class1").selectedIndex;
+var amount;
+if(age>18)
+{
+switch(s)
+{ 
+case 1:
+amount=250;
+ break;
+case 2:
+amount=200;
+break;
+case 3:
+amount=150;
+ break;
+ default:
+window.alert("PLEASE CHOOSE CORRECT CLASS TYPE--> A or B or C");
+}
+}
+else
+{
+switch(s)
+{ 
+case 1:
+amount=175;
+break;
+case 2:
+amount=120;
+ break;
+case 3:
+amount=75;
+ break;
+ default:
+window.alert("PLEASE CHOOSE CORRECT CLASS TYPE--> A or B or C");
+}
+}
+document.getElementById("amo").value="$"+amount;
+document.getElementById("t5").value="Rs."+amount*66.7;
+}
+</script>
+</head>
+<body>
+<p align="right"><img src="images/home.png" height=45px width=35px><a href="rio 2016.html">HOME</a> </p>
+<div class="header">
+<center><h2><b><u>*******************RIO 2016 OLYMPICS ONLINE TICKETING**********************</u></b></h2></center>
+</div>
+<div class="footer">
+<center><p><u>The ticket prices were announced on 16 September 2014, all of which were sold in Brazilian reals (BRL).
+ A total of 7.5 million tickets were to be sold in total, with ticket prices ranging from BRL 40 for many events to BRL 
+ 4,600 for the most expensive seats at the opening ceremony. About 3.8 million of these tickets were available for BRL 70 or less.
+</u></p></center></div>
+<div class="getter">
+<h1><u><i>ONLINE TICKET BOOKING</i></u></h1>
+<form>
+<fieldset>
+<legend> 
+BOOKING
+</legend>
+<label>FIRST NAME:</label><input type="text"name="FNAME" placeholder="FIRST NAME"width="30"maxlength="25" id="t1" onfocus="f1()" onblur="f0()">
+<label>LAST NAME:</label><input type="text"name="LNAME" placeholder="LAST NAME"width="30"maxlength="25" id="t2" onfocus="f2()" onblur="f0()" ><br>
+<label>ENTER YOUR AGE:</label><input type="text" name="AGE"placeholder="Enter your age" width="30"maxlength="4" id="t3" onfocus="f3()"onblur="f0()" ><br>
+<label>GENDER:<label>
+<input type="radio"name="gender" value="male">MALE&nbsp; &nbsp;
+<input type="radio"name="gender" value="female">FEMALE
+<input type="radio" name="gender" value="unknown" checked>UNKNOWN<br>
+<label>VENUE</label>
+<label>ENTER YOUR CONTACT NUMBER:</label><input type="text" name="CONAC"placeholder="Enter your contact number" width="30"maxlength="4" id="t6" onfocus="f4()"onblur="f0()" ><br>
+<label>ENTER YOUR EMAIL:</label><input type="text" name="EMAIL"placeholder="Enter your Contact number" width="30"maxlength="4" id="t7" onfocus="f5()"onblur="f0()" ><br>
+<label>VENUE:</LABEL>
+<select>
+<option>Select the venue
+<option>Maracanã Stadium                        
+<option>MarcanaZinho  				
+<option>Velodrome				
+<option>Carioca Arena 3,2,1                     
+<option>Future Arena				
+<option>Olympic Tennis Centre						
+<option>Deodoro Olympic Whitewater Stadium    	
+<option>Maria Lenk Aquatic Center		
+<option>Rio Olympic Arena			
+<option>Olympic Aquatic Stadium			
+<option>Youth Arena				
+<option>Olympic BMX Center			
+<option>Olympic Golf Course			
+<option>Rodrigo de Freitas Lagoon		
+<option>Marina da Gloria			
+<option>Olympic Equestrian Center		
+<option>Olympic Shooting Center			
+<option>Riocentro(pavillion-3,4,6)		
+<option>Sambodromo				
+<option>Copacabana Stadium			
+<option>Mountain Bike Center			
+<option>Pontal					
+<option>Mineirao				
+<option>Fort Copacabana				
+<option>Deodoro stadium	
+</select>
+<br>
+<label>TICKET TYPE:</label>
+<select id="class1">
+<option>CHOOSE YOUR TICKET CLASS TYPE </option>
+<option>A </option>
+<option>B</option>
+<option>C</option>
+</select><br>
+<label>ENTER THE DATE:</label><input type="date"> <br>
+ (NOTE:"PLEASE CHOOSE FROM 3 AUGUST TO 21 AUGUST 2016")
+<br>
+<br>
+<br>
+
+<br>
+<label>AMOUNT TO BE PAID:</label><input type="text" name="amount"  placeholder="amount" width="20 "maxlength="10" id="amo"><input type="button" value="CALCULATE" onclick="calculate()" ><br>
+<label>AMOUNT TO BE PAID(IN Rs.):</label><input type="text" name="amountrs"  placeholder="amount in rupee" width="20 "maxlength="10" id="t5">
+<br>
+<label>DETAILS:</label><br>
+<textarea rows=5 cols=50>
+Enter your kind details here.....
+
+NOTE:These details may be asked for the verification purpose.
+</textarea>
+<br><label>ENTER YOUR IMAGE:</label>         <input type="file"value="images/*"><br>
+<BR>
+<input type="BUTTON"value="submit" onclick="payment()"><br>
+<input type="reset"value="reset"><br>
+
+<br>
+</form>
+</fieldset>
+</div>
+</script>
+</body>
+</html> 
+
